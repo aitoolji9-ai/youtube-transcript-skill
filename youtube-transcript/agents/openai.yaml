@@ -1,0 +1,4 @@
+interface:
+  display_name: "유튜브·로컬 대본 추출"
+  short_description: "유튜브·로컬 대본을 시간별 MD로 저장하고 자막 대조·임시 데이터 정리까지 확인"
+  default_prompt: "$youtube-transcript로 이 영상의 원문 대본을 시간별 MD로 추출하고 대조·정리 결과를 확인해줘."

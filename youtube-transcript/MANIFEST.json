@@ -1,0 +1,23 @@
+{
+  "SKILL.md": "0cc94fd42876b2b11ed14cbb442acb2072ee90c5829e306c5095aa73747da4fb",
+  "agents/openai.yaml": "6af4fe2e93fd23d30ebe99d06acf8ce9aff39c332fca35919f88ccb297b21a28",
+  "references/collection.md": "0693bbc5b61bc512b4d31471685523b702d28efc174fb57e50f47ea421828066",
+  "references/install.md": "2153eeffa438e014e457fa7c057fe2d87acb0efff0e42b986edbd91a87565cc0",
+  "scripts/collect_transcript.py": "a66a36cd2053cab6f12bdd017bc7d6ca3b7cabeedde2c22b0d28d3b4769f39f6",
+  "scripts/install_skill.py": "943a22f8af57f6a3ed140a94fca1ffcaf9598ce061d2f88a6be1e7e2fc0f0121",
+  "scripts/runtime/caption_collector/__init__.py": "c7306f7a404152bcc2e8f9142fa8ccaf037909e851650bdf35e1cde4add83542",
+  "scripts/runtime/caption_collector/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+  "scripts/runtime/caption_collector/_child_guard.py": "d1262bcd4795cee041a7669bce4921e298721fe4a7305456a64f1c376a21e5dd",
+  "scripts/runtime/caption_collector/cli.py": "1e178eb190037c43469d0e7d397c035ad75ba6b2fe18b9d351158ab8309352bb",
+  "scripts/runtime/caption_collector/completion.py": "e6c91f1a1080cac9b05a415cec33fb21e44cdcde2ff7bd09bf6987bc9f2d023e",
+  "scripts/runtime/caption_collector/formats.py": "0532887cc5ea05ee02eaf210ba382437a5ac54da5cc2d93074aa320a7bf87f2b",
+  "scripts/runtime/caption_collector/media.py": "fda1fe73d12fb5482e6a65e059085f17b8bf0beeec0d94b2596ed19f23c727c0",
+  "scripts/runtime/caption_collector/providers.py": "dda046cc5ee5756493c6ed817f56ec333ca1bf9d24885e4c9149fdde6499e558",
+  "scripts/runtime/caption_collector/resources.py": "7588f70afcc6916ac73b90667d52dfaaa5b63796d71d404f59ced5c0dbec8b72",
+  "scripts/runtime/caption_collector/retention.py": "c42e10355ce52443fc43fc4b9f08aa15bd24dbfff921122fc274782051c0d5d7",
+  "scripts/runtime/caption_collector/storage.py": "61b424cb2b3eff887bd2fd171d1d54f897cee922c4858df5001e167a4dd90237",
+  "scripts/runtime/requirements.lock": "d185eb13fd21ed4378f3e018c5ff8184aca0d484837b50212a8c2136d54e33fb",
+  "scripts/runtime/run": "dca87332ddf5f5016a7b898ecfa2ec4c787092d17fd500136f339cff7818e444",
+  "scripts/runtime/scripts/transcribe_local.py": "50c0d4370590790cd1a6fec25bd7560349f85e52721aa35bf58feec29612ec39",
+  "scripts/setup.py": "a45dec4f9d5c3c7d578e853e14bcae74a7504c70687b9789e0fdc4dfff4ac9ed"
+}

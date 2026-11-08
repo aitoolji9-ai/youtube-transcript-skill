@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.zip
+*.zip.sha256
+build-source-hashes.json
+evidence/*
+!evidence/verification.json
+!evidence/privacy.json
+!evidence/publication.json
