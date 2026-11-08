@@ -108,5 +108,53 @@ class PortableTests(unittest.TestCase):
         manifest = json.loads((SKILL / 'MANIFEST.json').read_text())
         self.assertEqual(scan({name: (SKILL / name).read_bytes() for name in manifest}), [])
 
+    def prepare_fake_environment(self):
+        runtime = self.root / 'runtime'
+        python = runtime / '.venv/bin/python'
+        python.parent.mkdir(parents=True); python.write_text('test fixture')
+        return runtime, python
+
+    def test_missing_media_tools_install_only_expected_homebrew_formulae(self):
+        from types import SimpleNamespace
+        runtime, python = self.prepare_fake_environment()
+        installed = False
+
+        def which(name):
+            if name == 'brew': return '/tools/brew'
+            return '/tools/' + name if installed else None
+
+        def run(args, **kwargs):
+            nonlocal installed
+            if args[0] == '/tools/brew': installed = True
+            return SimpleNamespace(returncode=0)
+
+        with patch.object(setup, 'RUNTIME', runtime), patch.object(setup, 'STATE', self.root / 'state'), \
+             patch.object(setup, 'integrity'), patch.object(setup.sys, 'platform', 'darwin'), \
+             patch.object(setup.shutil, 'which', side_effect=which), patch.object(setup.subprocess, 'run', side_effect=run) as runner, \
+             patch.object(setup, 'download') as download, patch.object(setup, 'check', return_value={'captions_ready': True, 'media_ready': True}):
+            self.assertTrue(setup.setup(media=True, install_tools=True)['media_ready'])
+        self.assertEqual(runner.call_args_list[0].args[0][0], str(python))
+        self.assertEqual(runner.call_args_list[1].args[0], ['/tools/brew', 'install', 'ffmpeg', 'tesseract', 'whisper.cpp'])
+        self.assertEqual(download.call_count, 3)
+
+    def test_missing_homebrew_gives_recovery_error_before_model_download(self):
+        runtime, _ = self.prepare_fake_environment()
+        with patch.object(setup, 'RUNTIME', runtime), patch.object(setup, 'STATE', self.root / 'state'), \
+             patch.object(setup, 'integrity'), patch.object(setup.sys, 'platform', 'darwin'), \
+             patch.object(setup.shutil, 'which', return_value=None), patch.object(setup.subprocess, 'run'), \
+             patch.object(setup, 'download') as download:
+            with self.assertRaisesRegex(ValueError, 'Homebrew'): setup.setup(media=True, install_tools=True)
+        download.assert_not_called()
+
+    def test_missing_tools_without_install_flag_never_changes_system_packages(self):
+        runtime, python = self.prepare_fake_environment()
+        with patch.object(setup, 'RUNTIME', runtime), patch.object(setup, 'STATE', self.root / 'state'), \
+             patch.object(setup, 'integrity'), patch.object(setup.shutil, 'which', return_value=None), \
+             patch.object(setup.subprocess, 'run') as runner, patch.object(setup, 'download') as download:
+            with self.assertRaisesRegex(ValueError, '미디어 도구'): setup.setup(media=True)
+        self.assertEqual(runner.call_count, 1)
+        self.assertEqual(runner.call_args.args[0][0], str(python))
+        download.assert_not_called()
+
 
 if __name__ == '__main__': unittest.main()

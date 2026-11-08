@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-08T13:17:02.744834+00:00",
+  "scope": [
+    "tracked repository files",
+    "release ZIP contents and metadata",
+    "Git commit history"
+  ],
+  "archive_sha256": "531ff2e03e8c91689412bbcf9a133d57fa8cb09256c0afc062dd2fd9fa0c1632",
+  "archive_files": 22,
+  "personal_path_and_identifier_findings": 0,
+  "credential_pattern_findings": 0,
+  "gitleaks_version": "8.30.1",
+  "gitleaks_findings": 0,
+  "findings": [],
+  "machine_paths_and_raw_runtime_reports_not_published": true
+}

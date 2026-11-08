@@ -1,0 +1,257 @@
+{
+  "archive_sha256": "531ff2e03e8c91689412bbcf9a133d57fa8cb09256c0afc062dd2fd9fa0c1632",
+  "started_at": "2026-11-08T13:02:38.116394+00:00",
+  "scope": "fresh_home_install_and_real_entrypoints",
+  "platform": "darwin",
+  "full_media_requested": true,
+  "personal_paths_in_report": false,
+  "archive_file_count": 22,
+  "codex_install": "passed",
+  "existing_install_preserved": true,
+  "not_installed_result": "not_installed",
+  "setup": {
+    "captions_ready": true,
+    "media_ready": true,
+    "dependencies": {
+      "yt-dlp": "2026.10.26",
+      "youtube-transcript-api": "1.2.4"
+    },
+    "medium_verified": true,
+    "ocr_verified": true,
+    "api_key_required": false
+  },
+  "system_tools": {
+    "ffmpeg": true,
+    "ffprobe": true,
+    "whisper-cli": true,
+    "tesseract": true
+  },
+  "medium_install_path": "fresh_official_download_sha256_verified",
+  "regression_tests": {
+    "run": 102,
+    "passed": 102
+  },
+  "youtube": {
+    "status": "saved",
+    "provider": "yt_dlp",
+    "segment_count": 24,
+    "note_sha256": "ff589da9c692d9c44b885eec1550f60d83dd1b90f9427bc7eb41bdac4a229a3b",
+    "caption_audit": {
+      "checked_at": "2026-11-08T22:15:16+09:00",
+      "note_sha256": "ff589da9c692d9c44b885eec1550f60d83dd1b90f9427bc7eb41bdac4a229a3b",
+      "scope": "all_provider_caption_text_and_timestamps; not audio speech accuracy",
+      "provider": "youtube_transcript_api",
+      "status": "passed",
+      "all_text_and_timestamps_match": true,
+      "saved_segment_count": 24,
+      "reference_segment_count": 24,
+      "saved_body_sha256": "bd7607d4d069539718c2a5689e4c89c0283e577ee2ec14bfdade8b077db019f0",
+      "reference_body_sha256": "bd7607d4d069539718c2a5689e4c89c0283e577ee2ec14bfdade8b077db019f0",
+      "reference_raw_sha256": "1d0ce038853941a4bbccd01fea6cc91ae10c4565b20f865eacd51dec9df0a342",
+      "reference_stored_on_disk": false
+    },
+    "temporary_data_audit": {
+      "ok": true,
+      "checked_at": "2026-11-08T22:15:17+09:00",
+      "capture_payload_files": 0,
+      "download_files": 0,
+      "request_payload_files": 0,
+      "managed_paths_remaining": 0,
+      "managed_paths_checked": 0,
+      "reference_stored_on_disk": false
+    },
+    "completion": {
+      "ok": true,
+      "caption_audit": "passed",
+      "cleanup_confirmed": true
+    },
+    "offline_readback": true,
+    "independent_payload_count": 0,
+    "elapsed_seconds": 3.96
+  },
+  "youtube_cached_recheck": {
+    "status": "already_saved",
+    "provider": "yt_dlp",
+    "segment_count": 24,
+    "note_sha256": "ff589da9c692d9c44b885eec1550f60d83dd1b90f9427bc7eb41bdac4a229a3b",
+    "caption_audit": {
+      "checked_at": "2026-11-08T22:15:18+09:00",
+      "note_sha256": "ff589da9c692d9c44b885eec1550f60d83dd1b90f9427bc7eb41bdac4a229a3b",
+      "scope": "all_provider_caption_text_and_timestamps; not audio speech accuracy",
+      "provider": "youtube_transcript_api",
+      "status": "passed",
+      "all_text_and_timestamps_match": true,
+      "saved_segment_count": 24,
+      "reference_segment_count": 24,
+      "saved_body_sha256": "bd7607d4d069539718c2a5689e4c89c0283e577ee2ec14bfdade8b077db019f0",
+      "reference_body_sha256": "bd7607d4d069539718c2a5689e4c89c0283e577ee2ec14bfdade8b077db019f0",
+      "reference_raw_sha256": "1d0ce038853941a4bbccd01fea6cc91ae10c4565b20f865eacd51dec9df0a342",
+      "reference_stored_on_disk": false
+    },
+    "temporary_data_audit": {
+      "ok": true,
+      "checked_at": "2026-11-08T22:15:19+09:00",
+      "capture_payload_files": 0,
+      "download_files": 0,
+      "request_payload_files": 0,
+      "managed_paths_remaining": 0,
+      "managed_paths_checked": 0,
+      "reference_stored_on_disk": false
+    },
+    "completion": {
+      "ok": true,
+      "caption_audit": "passed",
+      "cleanup_confirmed": true
+    },
+    "offline_readback": true,
+    "independent_payload_count": 0,
+    "elapsed_seconds": 1.32
+  },
+  "embedded": {
+    "status": "saved",
+    "provider": "embedded_subtitle",
+    "segment_count": 2,
+    "note_sha256": "0772385f8797f0f7c255da06a0c88f00fbcc586a506f6070bb882a57ab2c30db",
+    "caption_audit": {
+      "checked_at": "2026-11-08T22:15:20+09:00",
+      "note_sha256": "0772385f8797f0f7c255da06a0c88f00fbcc586a506f6070bb882a57ab2c30db",
+      "scope": "all_provider_caption_text_and_timestamps; not audio speech accuracy",
+      "status": "not_applicable",
+      "reason": "source_not_youtube_caption_copy",
+      "source_file_alignment": true
+    },
+    "temporary_data_audit": {
+      "ok": true,
+      "checked_at": "2026-11-08T22:15:20+09:00",
+      "capture_payload_files": 0,
+      "download_files": 0,
+      "request_payload_files": 0,
+      "managed_paths_remaining": 0,
+      "managed_paths_checked": 1,
+      "reference_stored_on_disk": false
+    },
+    "completion": {
+      "ok": true,
+      "caption_audit": "not_applicable",
+      "cleanup_confirmed": true
+    },
+    "offline_readback": true,
+    "independent_payload_count": 0,
+    "elapsed_seconds": 0.89
+  },
+  "ocr": {
+    "status": "saved",
+    "provider": "screen_ocr",
+    "segment_count": 1,
+    "note_sha256": "e7ecaaf7a22a7121cf1dcc7de2795fc7480a8d1da47e092c593ed22cdd52bcb7",
+    "caption_audit": {
+      "checked_at": "2026-11-08T22:15:22+09:00",
+      "note_sha256": "e7ecaaf7a22a7121cf1dcc7de2795fc7480a8d1da47e092c593ed22cdd52bcb7",
+      "scope": "all_provider_caption_text_and_timestamps; not audio speech accuracy",
+      "status": "not_applicable",
+      "reason": "source_not_youtube_caption_copy",
+      "source_file_alignment": true
+    },
+    "temporary_data_audit": {
+      "ok": true,
+      "checked_at": "2026-11-08T22:15:22+09:00",
+      "capture_payload_files": 0,
+      "download_files": 0,
+      "request_payload_files": 0,
+      "managed_paths_remaining": 0,
+      "managed_paths_checked": 1,
+      "reference_stored_on_disk": false
+    },
+    "completion": {
+      "ok": true,
+      "caption_audit": "not_applicable",
+      "cleanup_confirmed": true
+    },
+    "offline_readback": true,
+    "independent_payload_count": 0,
+    "elapsed_seconds": 2.39
+  },
+  "stt": {
+    "status": "saved",
+    "provider": "whisper_medium",
+    "segment_count": 2,
+    "note_sha256": "34d04e288f575d7c492323463ce9f8dfd57c893cdf52f43dcc2cb54eaf7f9e49",
+    "caption_audit": {
+      "checked_at": "2026-11-08T22:16:08+09:00",
+      "note_sha256": "34d04e288f575d7c492323463ce9f8dfd57c893cdf52f43dcc2cb54eaf7f9e49",
+      "scope": "all_provider_caption_text_and_timestamps; not audio speech accuracy",
+      "status": "not_applicable",
+      "reason": "source_not_youtube_caption_copy",
+      "source_file_alignment": true
+    },
+    "temporary_data_audit": {
+      "ok": true,
+      "checked_at": "2026-11-08T22:16:08+09:00",
+      "capture_payload_files": 0,
+      "download_files": 0,
+      "request_payload_files": 0,
+      "managed_paths_remaining": 0,
+      "managed_paths_checked": 2,
+      "reference_stored_on_disk": false
+    },
+    "completion": {
+      "ok": true,
+      "caption_audit": "not_applicable",
+      "cleanup_confirmed": true
+    },
+    "offline_readback": true,
+    "independent_payload_count": 0,
+    "elapsed_seconds": 43.22
+  },
+  "local_originals_preserved_until_test_cleanup": true,
+  "hermes_install": "passed",
+  "hermes_registry_entrypoint": {
+    "status": "already_saved",
+    "provider": "yt_dlp",
+    "segment_count": 24,
+    "note_sha256": "ff589da9c692d9c44b885eec1550f60d83dd1b90f9427bc7eb41bdac4a229a3b",
+    "caption_audit": {
+      "checked_at": "2026-11-08T22:16:12+09:00",
+      "note_sha256": "ff589da9c692d9c44b885eec1550f60d83dd1b90f9427bc7eb41bdac4a229a3b",
+      "scope": "all_provider_caption_text_and_timestamps; not audio speech accuracy",
+      "provider": "youtube_transcript_api",
+      "status": "passed",
+      "all_text_and_timestamps_match": true,
+      "saved_segment_count": 24,
+      "reference_segment_count": 24,
+      "saved_body_sha256": "bd7607d4d069539718c2a5689e4c89c0283e577ee2ec14bfdade8b077db019f0",
+      "reference_body_sha256": "bd7607d4d069539718c2a5689e4c89c0283e577ee2ec14bfdade8b077db019f0",
+      "reference_raw_sha256": "1d0ce038853941a4bbccd01fea6cc91ae10c4565b20f865eacd51dec9df0a342",
+      "reference_stored_on_disk": false
+    },
+    "temporary_data_audit": {
+      "ok": true,
+      "checked_at": "2026-11-08T22:16:13+09:00",
+      "capture_payload_files": 0,
+      "download_files": 0,
+      "request_payload_files": 0,
+      "managed_paths_remaining": 0,
+      "managed_paths_checked": 0,
+      "reference_stored_on_disk": false
+    },
+    "completion": {
+      "ok": true,
+      "caption_audit": "passed",
+      "cleanup_confirmed": true
+    },
+    "offline_readback": true,
+    "independent_payload_count": 0,
+    "elapsed_seconds": 1.69
+  },
+  "hermes_model_autoselection": "not_tested",
+  "ok": true,
+  "isolated_test_workspace_removed": true,
+  "finished_at": "2026-11-08T13:16:14.382435+00:00",
+  "existing_private_installation_unchanged": true,
+  "tested_native_versions": {
+    "python": "3.14.8",
+    "ffmpeg": "9.0.2",
+    "whisper.cpp": "1.9.5",
+    "tesseract": "5.5.4"
+  }
+}
